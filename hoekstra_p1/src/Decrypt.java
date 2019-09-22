@@ -12,11 +12,19 @@ public class Decrypt {
         int secondDigit = (n1 % 1000) / 100;
         int thirdDigit = (n1 % 100) / 10;
         int fourthDigit= n1 % 10;
+        
+        int tempDigit = firstDigit;
+        firstDigit = thirdDigit;
+        thirdDigit = tempDigit;
+        
+        tempDigit = secondDigit;
+        secondDigit = fourthDigit;
+        fourthDigit = tempDigit;
 
-        firstDigit = (firstDigit - 7) % 10;
-        secondDigit = (secondDigit - 7) % 10;
-        thirdDigit = (thirdDigit - 7) % 10;
-        fourthDigit = (fourthDigit - 7) % 10;
+        firstDigit = (firstDigit + 10 - 7) % 10;
+        secondDigit = (secondDigit + 10 - 7) % 10;
+        thirdDigit = (thirdDigit + 10 - 7) % 10;
+        fourthDigit = (fourthDigit + 10 - 7) % 10;
         
         System.out.print("The encrypted number is: ");
         System.out.print(firstDigit);

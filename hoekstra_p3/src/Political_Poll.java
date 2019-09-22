@@ -165,7 +165,7 @@ public class Political_Poll {
         	System.out.print("Equal Pay with ");
         }
         if (maxIndex == 4){
-        	System.out.print("LGBT Adoptoin Rights with ");
+        	System.out.print("LGBT Adoption Rights with ");
         }
         System.out.println( + maxValue + " points.");
         
@@ -184,7 +184,7 @@ public class Political_Poll {
         	System.out.print("Equal Pay with ");
         }
         if (minIndex == 4){
-        	System.out.print("LGBT Adoptoin Rights with ");
+        	System.out.print("LGBT Adoption Rights with ");
         }
         System.out.println( + minValue + " points.");
         

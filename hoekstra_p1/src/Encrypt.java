@@ -18,6 +18,18 @@ public class Encrypt {
         thirdDigit = (thirdDigit + 7) % 10;
         fourthDigit = (fourthDigit + 7) % 10;
         
+        //Then swap the first digit with the third
+        //and swap the second digit with the fourth.
+        //Then print the encrypted integer.
+        
+        int tempDigit = firstDigit;
+        firstDigit = thirdDigit;
+        thirdDigit = tempDigit;
+        
+        tempDigit = secondDigit;
+        secondDigit = fourthDigit;
+        fourthDigit = tempDigit;
+        
         System.out.print("The encrypted number is: ");
         System.out.print(firstDigit);
         System.out.print(secondDigit);
